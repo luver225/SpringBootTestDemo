@@ -1,0 +1,648 @@
+2020-11-01 13:58:18.801 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 11404 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 13:58:18.803 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 13:58:18.803 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 13:58:19.806 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.281 seconds (JVM running for 2.056)
+2020-11-01 13:58:19.923 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 20 ] - 这是debug日志...
+2020-11-01 13:58:19.923 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 22 ] - 这是info日志...
+2020-11-01 13:58:19.923 [ main ] - [ WARN  ] [ com.example.demo.DemoApplicationTests : 23 ] - 这是warn日志...
+2020-11-01 13:58:19.923 [ main ] - [ ERROR ] [ com.example.demo.DemoApplicationTests : 24 ] - 这是error日志...
+2020-11-01 17:29:47.633 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 10788 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:29:47.634 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:29:47.634 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:29:48.203 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:29:49.152 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.83 seconds (JVM running for 2.644)
+2020-11-01 17:29:49.543 [ main ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 865 ] - init datasource error, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:854)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1222)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1218)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.example.demo.DemoApplicationTests.contextLoads(DemoApplicationTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2020-11-01 17:29:49.549 [ main ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 898 ] - {dataSource-1} init error
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:854)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1222)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1218)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.example.demo.DemoApplicationTests.contextLoads(DemoApplicationTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2020-11-01 17:29:49.550 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:29:49.552 [ Druid-ConnectionPool-Create-306016343 ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 2454 ] - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2451)
+2020-11-01 17:29:49.554 [ Druid-ConnectionPool-Create-306016343 ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 2454 ] - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2451)
+2020-11-01 17:29:49.571 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:31:05.784 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 17324 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:31:05.785 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:31:05.786 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:31:06.165 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:31:07.081 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.618 seconds (JVM running for 2.423)
+2020-11-01 17:31:07.459 [ main ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 865 ] - init datasource error, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT
+java.sql.SQLSyntaxErrorException: Unknown database 'mybatis'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:854)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1222)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1218)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.example.demo.DemoApplicationTests.contextLoads_datasource(DemoApplicationTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2020-11-01 17:31:07.465 [ main ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 898 ] - {dataSource-1} init error
+java.sql.SQLSyntaxErrorException: Unknown database 'mybatis'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:854)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1222)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1218)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.example.demo.DemoApplicationTests.contextLoads_datasource(DemoApplicationTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2020-11-01 17:31:07.465 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:31:07.468 [ Druid-ConnectionPool-Create-1865289764 ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 2454 ] - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'mybatis'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2451)
+2020-11-01 17:31:07.470 [ Druid-ConnectionPool-Create-1865289764 ] - [ ERROR ] [ com.alibaba.druid.pool.DruidDataSource : 2454 ] - create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false&serverTimezone=GMT, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'mybatis'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2451)
+2020-11-01 17:31:07.485 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:31:34.811 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 8832 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:31:34.812 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:31:34.813 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:31:35.181 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:31:36.077 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.578 seconds (JVM running for 2.366)
+2020-11-01 17:31:36.521 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:31:36.546 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:33:18.918 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 13968 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:33:18.919 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:33:18.920 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:33:19.273 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:33:19.845 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:33:20.472 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.877 seconds (JVM running for 2.684)
+2020-11-01 17:33:20.638 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:33:48.410 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 7520 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:33:48.411 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:33:48.411 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:33:48.801 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:33:49.360 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:33:49.993 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 1.894 seconds (JVM running for 2.685)
+2020-11-01 17:33:50.155 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:35:06.791 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 55 ] - Starting DemoApplication on DESKTOP-E1FPA9P with PID 7368 (E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest\target\classes started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:35:06.793 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplication : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:35:06.793 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:35:07.152 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:35:07.444 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:35:07.445 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-11-01 17:35:07.445 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-01 17:35:07.446 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-01 17:35:07.446 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-01 17:35:07.446 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-01 17:35:07.449 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-01 17:35:07.504 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-11-01 17:35:07.713 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:35:07.937 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:35:08.002 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 61 ] - Started DemoApplication in 1.532 seconds (JVM running for 2.001)
+2020-11-01 17:37:07.908 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15684 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:37:07.910 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:37:07.911 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:37:08.281 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:37:08.848 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:37:10.466 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 2.88 seconds (JVM running for 3.716)
+2020-11-01 17:37:10.639 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:43:59.601 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 8728 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:43:59.602 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:43:59.623 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:44:00.001 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:44:00.589 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:44:02.443 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:44:24.753 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 2544 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:44:24.755 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:44:24.755 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:44:25.129 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:44:25.687 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:44:27.251 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:44:59.502 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 13848 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:44:59.503 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:44:59.503 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:44:59.881 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:45:00.493 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:45:02.309 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.13 seconds (JVM running for 3.917)
+2020-11-01 17:45:02.486 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:45:23.984 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 55 ] - Starting DemoApplication on DESKTOP-E1FPA9P with PID 13660 (E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest\target\classes started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:45:23.986 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplication : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:45:23.986 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:45:24.351 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:45:24.637 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:45:24.637 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-11-01 17:45:24.637 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-01 17:45:24.638 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-01 17:45:24.638 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-01 17:45:24.638 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-01 17:45:24.641 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-01 17:45:24.700 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-11-01 17:45:24.923 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:45:26.413 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:45:26.442 [ main ] - [ INFO  ] [ com.example.demo.DemoApplication : 61 ] - Started DemoApplication in 2.79 seconds (JVM running for 3.254)
+2020-11-01 17:45:29.245 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-01 17:52:17.293 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 12872 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:52:17.294 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:52:17.295 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:52:17.674 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:52:18.253 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:52:20.220 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.277 seconds (JVM running for 4.062)
+2020-11-01 17:52:20.359 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 19 ] - 这是debug日志...
+2020-11-01 17:52:20.360 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 21 ] - 这是info日志...
+2020-11-01 17:52:20.360 [ main ] - [ WARN  ] [ com.example.demo.DemoApplicationTests : 22 ] - 这是warn日志...
+2020-11-01 17:52:20.360 [ main ] - [ ERROR ] [ com.example.demo.DemoApplicationTests : 23 ] - 这是error日志...
+2020-11-01 17:52:20.379 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 17:54:25.808 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15612 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 17:54:25.809 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 17:54:25.810 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 17:54:26.184 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 17:54:26.733 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 17:54:28.594 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.126 seconds (JVM running for 3.935)
+2020-11-01 17:54:28.770 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:44:44.292 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 14500 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:44:44.293 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:44:44.293 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:44:45.239 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:44:47.173 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.23 seconds (JVM running for 4.076)
+2020-11-01 18:44:47.358 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(department_name) values(?) 
+2020-11-01 18:44:47.376 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:44:47.456 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:46:11.800 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15952 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:46:11.801 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:46:11.801 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:46:12.801 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:46:14.851 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.379 seconds (JVM running for 4.19)
+2020-11-01 18:46:15.024 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(departmentName) values(?) 
+2020-11-01 18:46:15.041 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:46:15.081 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - <==    Updates: 1
+2020-11-01 18:46:15.110 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:47:30.345 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 12332 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:47:30.346 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:47:30.347 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:47:31.254 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:47:33.180 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.226 seconds (JVM running for 4.1)
+2020-11-01 18:47:33.333 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(department_name) values(?) 
+2020-11-01 18:47:33.350 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:47:33.430 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:47:46.069 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 13024 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:47:46.070 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:47:46.070 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:47:47.002 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:47:48.776 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.022 seconds (JVM running for 3.848)
+2020-11-01 18:47:48.929 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 30 ] - 这是debug日志...
+2020-11-01 18:47:48.929 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 32 ] - 这是info日志...
+2020-11-01 18:47:48.929 [ main ] - [ WARN  ] [ com.example.demo.DemoApplicationTests : 33 ] - 这是warn日志...
+2020-11-01 18:47:48.929 [ main ] - [ ERROR ] [ com.example.demo.DemoApplicationTests : 34 ] - 这是error日志...
+2020-11-01 18:47:48.953 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(department_name) values(?) 
+2020-11-01 18:47:48.971 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:47:49.058 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:48:04.759 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 1192 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:48:04.760 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:48:04.761 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:48:05.688 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:48:07.499 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.099 seconds (JVM running for 3.947)
+2020-11-01 18:48:07.674 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(department_name) values(?) 
+2020-11-01 18:48:07.691 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:48:07.769 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:48:27.848 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 12044 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:48:27.849 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:48:27.850 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:48:28.778 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:48:30.838 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.374 seconds (JVM running for 4.211)
+2020-11-01 18:48:31.007 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(departmentName) values(?) 
+2020-11-01 18:48:31.026 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 18:48:31.066 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - <==    Updates: 1
+2020-11-01 18:48:31.098 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 18:48:41.736 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15808 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 18:48:41.737 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 18:48:41.738 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 18:48:42.097 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 166 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-11-01 18:48:42.659 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 18:48:44.550 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.202 seconds (JVM running for 4.032)
+2020-11-01 18:48:44.742 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 19:01:36.677 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 13084 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 19:01:36.678 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 19:01:36.678 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 19:01:37.643 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 19:01:39.527 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 19:02:06.964 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 14544 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 19:02:06.966 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 19:02:06.966 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 19:02:07.997 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 19:02:09.751 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.146 seconds (JVM running for 3.992)
+2020-11-01 19:02:09.903 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(departmentName) values(?) 
+2020-11-01 19:02:09.921 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 19:02:09.961 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - <==    Updates: 1
+2020-11-01 19:02:09.995 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 19:03:12.957 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15668 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 19:03:12.958 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 19:03:12.959 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 19:03:13.986 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 19:03:15.616 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.015 seconds (JVM running for 3.859)
+2020-11-01 19:03:15.791 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==>  Preparing: insert into department(departmentName) values(?) 
+2020-11-01 19:03:15.810 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - ==> Parameters: testDepartment(String)
+2020-11-01 19:03:15.879 [ main ] - [ DEBUG ] [ c.example.demo.mapper.DepartmentMapper.insertDept : 159 ] - <==    Updates: 1
+2020-11-01 19:03:15.888 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.insertEmp : 159 ] - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2020-11-01 19:03:15.888 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.insertEmp : 159 ] - ==> Parameters: lastName(String), email(String), 1(Integer), 1(Integer)
+2020-11-01 19:03:15.933 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.insertEmp : 159 ] - <==    Updates: 1
+2020-11-01 19:03:15.935 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.getEmpById : 159 ] - ==>  Preparing: SELECT * FROM employee WHERE id=? 
+2020-11-01 19:03:15.937 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.getEmpById : 159 ] - ==> Parameters: 1(Integer)
+2020-11-01 19:03:15.950 [ main ] - [ DEBUG ] [ com.example.demo.mapper.EmployeeMapper.getEmpById : 159 ] - <==      Total: 1
+2020-11-01 19:03:15.974 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 21:53:51.283 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 16004 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 21:53:51.308 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 21:53:51.309 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 21:53:52.475 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 21:53:54.823 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.873 seconds (JVM running for 4.759)
+2020-11-01 21:53:57.661 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 21:54:36.486 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 4460 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 21:54:36.487 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 21:54:36.488 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 21:54:37.678 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 21:54:39.857 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.726 seconds (JVM running for 4.613)
+2020-11-01 21:54:40.768 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 21:58:08.427 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 15812 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 21:58:08.451 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 21:58:08.452 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 21:58:09.662 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 21:58:11.919 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.847 seconds (JVM running for 4.763)
+2020-11-01 21:58:12.107 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 22:03:23.048 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 5980 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 22:03:23.049 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 22:03:23.050 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 22:03:24.250 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 22:03:26.613 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.911 seconds (JVM running for 4.791)
+2020-11-01 22:03:27.451 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:10:19.247 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 8496 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:10:19.248 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:10:19.249 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:10:20.390 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:10:22.712 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 3.792 seconds (JVM running for 4.637)
+2020-11-01 23:10:22.910 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:44:26.231 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 18440 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:44:26.232 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:44:26.232 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:44:27.423 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:44:30.000 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.158 seconds (JVM running for 5.012)
+2020-11-01 23:44:30.808 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:45:47.892 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 1888 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:45:47.893 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:45:47.894 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:45:49.085 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:45:50.988 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 18988 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:45:50.990 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:45:50.991 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:45:52.615 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:45:54.943 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.488 seconds (JVM running for 5.409)
+2020-11-01 23:45:55.757 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:50:00.825 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 9308 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:50:00.827 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:50:00.827 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:50:02.187 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:50:05.153 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.655 seconds (JVM running for 5.602)
+2020-11-01 23:50:09.386 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:51:55.565 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 18584 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:51:55.567 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:51:55.567 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:51:56.834 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:51:59.697 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.468 seconds (JVM running for 5.393)
+2020-11-01 23:52:00.016 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:52:30.744 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 18404 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:52:30.746 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:52:30.746 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:52:31.953 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:52:34.714 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.333 seconds (JVM running for 5.235)
+2020-11-01 23:52:35.017 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:54:49.262 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 18968 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:54:49.263 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:54:49.264 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:54:50.492 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:54:53.403 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.525 seconds (JVM running for 5.415)
+2020-11-01 23:54:53.687 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-11-01 23:59:02.857 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 55 ] - Starting DemoApplicationTests on DESKTOP-E1FPA9P with PID 16124 (started by rongkun.lu in E:\springboot核心篇+整合篇-尚硅谷\01尚硅谷SpringBoot核心技术篇\rongkun.lu\SpringBootTest)
+2020-11-01 23:59:02.858 [ main ] - [ DEBUG ] [ com.example.demo.DemoApplicationTests : 56 ] - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-01 23:59:02.859 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-11-01 23:59:04.130 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 23:59:07.053 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 61 ] - Started DemoApplicationTests in 4.578 seconds (JVM running for 5.497)
+2020-11-01 23:59:07.341 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
